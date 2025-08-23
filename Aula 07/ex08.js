@@ -13,3 +13,9 @@ const nomes = [
     "Lara",
     "Thays"
 ]
+
+const todosChamadosJoao = nomes
+    .filter((nome) => nome.toLowerCase().includes('joão'))
+    .map((nome) => nome.toUpperCase())
+
+console.log(todosChamadosJoao)
