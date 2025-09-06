@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplicação</title>
+  </head>
+  <body>
+    <h1>Calcule o produto entre 2 numeros</h1>
+
+    <div>
+      <label for="numero1"> Numero 1 </label> <br />
+      <input type="number" id="numero1" />
+    </div>
+
+    <div>
+      <label for="numero2"> Numero 2 </label> <br />
+      <input type="number" id="numero2" />
+    </div>
+
+    <button onclick="handleCalcular()">Calcular</button>
+
+    <div id="resultado"></div>
+
+    <script>
+      const multiplicar = (x, y) => x * y;
+
+      function handleCalcular() {
+        const numero1 = Number(document.getElementById("numero1").value);
+        const numero2 = Number(document.getElementById("numero2").value);
+
+        const produto = multiplicar(numero1, numero2)
+
+        const divResultado = document.getElementById('resultado')
+        divResultado.innerText = `O produto entre eles é ${produto}`
+      }
+    </script>
+  </body>
+</html>
