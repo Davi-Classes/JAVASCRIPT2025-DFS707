@@ -1,0 +1,6 @@
+Ex01. Crie um objeto "carro" que deve conter as propriedades "marca", "modelo", "ano" e "cor"
+
+a) Mostre no console a marca e o modelo do carro
+b) Mostre no console a cor do carro
+c) Altere o valor da cor do carro (e mostre novamente)
+d) Adicione uma nova propriedade chamada "km" que terá a kilometragem do carro

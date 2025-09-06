@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Cadastre seu Carro </h1>
+    <input type="text" id="marca"> <br>
+    <input type="text" id="modelo" placeholder="Modelo do carro"> <br>
+    <button> Cadastrar </button>
+
+    <script>
+        // Objetos - Elementos HTML
+        // Ao utilizar o document.getElementBy* o javascript
+        // trás um objeto que representa o elemento em tela.
+        const input = document.getElementById('marca')
+        
+        // Alterar os valores do elemento via Javascript
+        // input.value = 'Honda'
+        input.placeholder = 'Marca do carro' // Definindo o Placeholder pelo Javascript
+
+        // Alterar os estilos CSS pelo Javascript
+        // input.style.background = 'red'
+        input.style.fontFamily = 'Serif' // Alterando a Fonte
+        input.style.fontSize = '20px' // Alterando o Tamanho da Font
+    </script>
+</body>
+</html>
